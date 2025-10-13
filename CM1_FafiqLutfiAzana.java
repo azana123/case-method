@@ -38,7 +38,7 @@ public class CM1_FafiqLutfiAzana {
     double nilaiAkhir1 = ((nilaiUas1 * 0.3) + (nilaiUts1 * 0.3) + (nilaiTugas1 * 0.4));
     if (nilaiAkhir1 <= 100 && nilaiAkhir1 > 80){
         nilaiHuruf1 = "A";
-    }else if (nilaiAkhir1 <=80 && nilaiAkhir1 > 73) {
+    }else if (nilaiAkhir1 <= 80 && nilaiAkhir1 > 73) {
         nilaiHuruf1 = "B+";
     }else if (nilaiAkhir1 <= 73 && nilaiAkhir1 > 65) {
         nilaiHuruf1 = "B";
@@ -106,10 +106,10 @@ public class CM1_FafiqLutfiAzana {
 
     if (nilaiAkhir1 <= 100 && nilaiTugas1 <= 100 && nilaiUas1 <= 100 && nilaiUts1 <= 100 && nilaiAkhir2 <= 100 && nilaiTugas2 <= 100 && nilaiUas2 <= 100 && nilaiUts2 <= 100) {
     System.out.println("______________________________________________________________________________________");
-    System.out.println("Mata Kuliah\t\t\tUTS UAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
+    System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
     System.out.println("______________________________________________________________________________________");
-    System.out.println("Algoritma Pemrograman\t\t " + nilaiUts1 + "  " + nilaiUas1 + "  " + nilaiTugas1 + "\t" + rataLimit1 + "\t\t" + nilaiHuruf1 + "\t\t" + status1);
-    System.out.println("Struktur Data\t\t\t " + nilaiUts2 + "  " + nilaiUas2 + "  " + nilaiTugas2 + "\t" + rataLimit2 + "\t\t" + nilaiHuruf2 + "\t\t" + status2);
+    System.out.println("Algoritma Pemrograman\t\t " + nilaiUts1 + "\t" + nilaiUas1 + "\t" + nilaiTugas1 + "\t" + rataLimit1 + "\t\t" + nilaiHuruf1 + "\t\t" + status1);
+    System.out.println("Struktur Data\t\t\t " + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + rataLimit2 + "\t\t" + nilaiHuruf2 + "\t\t" + status2);
     System.out.println("");
     System.out.println("Rata-Rata Nilai Akhir\t:" + rataLimit3);
     System.out.println("Status Semester\t\t:" + statusAkhir);
@@ -117,7 +117,7 @@ public class CM1_FafiqLutfiAzana {
     }else {
         System.out.println("Input Nilai Tidak Valid!!!");
     }
-
+  
     sc.close();
     }
 }
