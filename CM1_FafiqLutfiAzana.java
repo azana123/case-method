@@ -107,9 +107,9 @@ public class CM1_FafiqLutfiAzana {
     System.out.println("==================== HASIL PENILAIAN AKADEMIK ====================");
     System.out.println("Nama\t: "+ nama);
     System.out.println("NIM\t: "+ NIM);
-    System.out.println("______________________________________________________________________________________");
+    System.out.println("______________________________________________________________________________________________");
     System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
-    System.out.println("______________________________________________________________________________________");
+    System.out.println("______________________________________________________________________________________________");
     System.out.println("Algoritma Pemrograman\t\t" + nilaiUts1 + "\t" + nilaiUas1 + "\t" + nilaiTugas1 + "\t" + rataLimit1 + "\t\t  " + nilaiHuruf1 + "\t\t" + status1);
     System.out.println("Struktur Data\t\t\t" + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + rataLimit2 + "\t\t  " + nilaiHuruf2 + "\t\t" + status2);
     System.out.println("");
