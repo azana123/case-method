@@ -85,7 +85,7 @@ public class CM1_FafiqLutfiAzana {
 //LOGIC 3 (nested if)
     double rataAkhir = (nilaiAkhir1 + nilaiAkhir2) / 2;
     if (status1 == "LULUS" && status2 == "LULUS"){
-        if (nilaiAkhir1 > 70 && nilaiAkhir2 > 70) {
+        if (rataAkhir >= 70) {
             statusAkhir = "LULUS";
         }else{
             statusAkhir = "TIDAK LULUS";
@@ -104,15 +104,15 @@ public class CM1_FafiqLutfiAzana {
     System.out.println("Nama\t: "+ nama);
     System.out.println("NIM\t: "+ NIM);
 
-    if (nilaiAkhir1 <= 100 && nilaiTugas1 <= 100 && nilaiUas1 <= 100 && nilaiUts1 <= 100 && nilaiAkhir2 <= 100 && nilaiTugas2 <= 100 && nilaiUas2 <= 100 && nilaiUts2 <= 100) {
-    System.out.println("______________________________________________________________________________________");
-    System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
-    System.out.println("______________________________________________________________________________________");
-    System.out.println("Algoritma Pemrograman\t\t " + nilaiUts1 + "\t" + nilaiUas1 + "\t" + nilaiTugas1 + "\t" + rataLimit1 + "\t\t" + nilaiHuruf1 + "\t\t" + status1);
-    System.out.println("Struktur Data\t\t\t " + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + rataLimit2 + "\t\t" + nilaiHuruf2 + "\t\t" + status2);
-    System.out.println("");
-    System.out.println("Rata-Rata Nilai Akhir\t:" + rataLimit3);
-    System.out.println("Status Semester\t\t:" + statusAkhir);
+    if (nilaiTugas1 <= 100 && nilaiTugas1 >= 0 && nilaiUas1 <= 100 && nilaiUas1 >= 0 && nilaiUts1 <= 100 && nilaiUts1 >= 0 && nilaiTugas2 <= 100 && nilaiTugas2 >= 0 && nilaiUas2 <= 100 && nilaiUas2 >=0 && nilaiUts2 <= 100 && nilaiUts2 >=0) {
+        System.out.println("______________________________________________________________________________________");
+        System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
+        System.out.println("______________________________________________________________________________________");
+        System.out.println("Algoritma Pemrograman\t\t " + nilaiUts1 + "\t" + nilaiUas1 + "\t" + nilaiTugas1 + "\t" + rataLimit1 + "\t\t" + nilaiHuruf1 + "\t\t" + status1);
+        System.out.println("Struktur Data\t\t\t " + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + rataLimit2 + "\t\t" + nilaiHuruf2 + "\t\t" + status2);
+        System.out.println("");
+        System.out.println("Rata-Rata Nilai Akhir\t:" + rataLimit3);
+        System.out.println("Status Semester\t\t:" + statusAkhir);
 
     }else {
         System.out.println("Input Nilai Tidak Valid!!!");
