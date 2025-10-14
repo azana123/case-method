@@ -15,22 +15,22 @@ public class CM1_FafiqLutfiAzana {
 //INPUT NILAI MATKUL 1
     System.out.println("=== Mata Kuliah 1: Algoritma dan Pemrograman ===");
     System.out.print("Nilai UTS\t: ");
-    int nilaiUts1 = sc.nextInt();
+    double nilaiUts1 = sc.nextDouble();
     System.out.print("Nilai UAS\t: ");
-    int nilaiUas1 = sc.nextInt();
+    double nilaiUas1 = sc.nextDouble();
     System.out.print("Nilai Tugas\t: ");
-    int nilaiTugas1 = sc.nextInt();
+    double nilaiTugas1 = sc.nextDouble();
     String nilaiHuruf1;
     String status1;
 
 //INPUT NILAI MATKUL 2
     System.out.println("=== Mata Kuliah 2: Struktur Data ===");
     System.out.print("Nilai UTS\t: ");
-    int nilaiUts2 = sc.nextInt();
+    double nilaiUts2 = sc.nextDouble();
     System.out.print("Nilai UAS\t: ");
-    int nilaiUas2 = sc.nextInt();
+    double nilaiUas2 = sc.nextDouble();
     System.out.print("Nilai Tugas\t: ");
-    int nilaiTugas2 = sc.nextInt();
+    double nilaiTugas2 = sc.nextDouble();
     String nilaiHuruf2;
     String status2;
 
