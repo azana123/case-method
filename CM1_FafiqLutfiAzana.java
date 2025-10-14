@@ -52,7 +52,7 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf1 = "E";
     }
     
-    if (nilaiAkhir1 > 60) {
+    if (nilaiAkhir1 >= 60) {
         status1 = "LULUS";
     }else{
         status1 = "TIDAK LULUS";
@@ -76,7 +76,7 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf2 = "E";
     }
 
-    if (nilaiAkhir2 > 60) {
+    if (nilaiAkhir2 >= 60) {
         status2 = "LULUS";
     }else{
         status2 = "TIDAK LULUS";
