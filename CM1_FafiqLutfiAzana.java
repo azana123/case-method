@@ -52,10 +52,12 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf1 = "E";
     }
     
-    if (nilaiAkhir1 >= 60) {
+    if (nilaiAkhir1 >= 60 && nilaiTugas1 <= 100 && nilaiTugas1 >= 0 && nilaiUas1 <= 100 && nilaiUas1 >= 0 && nilaiUts1 <= 100 && nilaiUts1 >= 0) {
         status1 = "LULUS";
-    }else{
+    }else if (nilaiAkhir1 < 60 && nilaiTugas1 <= 100 && nilaiTugas1 >= 0 && nilaiUas1 <= 100 && nilaiUas1 >= 0 && nilaiUts1 <= 100 && nilaiUts1 >= 0) {
         status1 = "TIDAK LULUS";
+    }else {
+        status1 = "INPUT NILAI TIDAK VALID";
     }
 
 //LOGIC 2
@@ -76,10 +78,12 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf2 = "E";
     }
 
-    if (nilaiAkhir2 >= 60) {
+    if (nilaiAkhir2 >= 60 && nilaiTugas2 <= 100 && nilaiTugas2 >= 0 && nilaiUas2 <= 100 && nilaiUas2 >=0 && nilaiUts2 <= 100 && nilaiUts2 >=0) {
         status2 = "LULUS";
-    }else{
+    }else if (nilaiAkhir2 < 60 && nilaiTugas2 <= 100 && nilaiTugas2 >= 0 && nilaiUas2 <= 100 && nilaiUas2 >=0 && nilaiUts2 <= 100 && nilaiUts2 >=0) {
         status2 = "TIDAK LULUS";
+    }else {
+        status2 = "INPUT NILAI TIDAK VALID";
     }
 
 //LOGIC 3 (nested if)
@@ -87,7 +91,7 @@ public class CM1_FafiqLutfiAzana {
     if (status1 == "LULUS" && status2 == "LULUS"){
         if (rataAkhir >= 70) {
             statusAkhir = "LULUS";
-        }else{
+        }else {
             statusAkhir = "TIDAK LULUS";
         }
     }else{
@@ -103,21 +107,15 @@ public class CM1_FafiqLutfiAzana {
     System.out.println("==================== HASIL PENILAIAN AKADEMIK ====================");
     System.out.println("Nama\t: "+ nama);
     System.out.println("NIM\t: "+ NIM);
-
-    if (nilaiTugas1 <= 100 && nilaiTugas1 >= 0 && nilaiUas1 <= 100 && nilaiUas1 >= 0 && nilaiUts1 <= 100 && nilaiUts1 >= 0 && nilaiTugas2 <= 100 && nilaiTugas2 >= 0 && nilaiUas2 <= 100 && nilaiUas2 >=0 && nilaiUts2 <= 100 && nilaiUts2 >=0) {
-        System.out.println("______________________________________________________________________________________");
-        System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
-        System.out.println("______________________________________________________________________________________");
-        System.out.println("Algoritma Pemrograman\t\t " + nilaiUts1 + "\t" + nilaiUas1 + "\t" + nilaiTugas1 + "\t" + rataLimit1 + "\t\t" + nilaiHuruf1 + "\t\t" + status1);
-        System.out.println("Struktur Data\t\t\t " + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + rataLimit2 + "\t\t" + nilaiHuruf2 + "\t\t" + status2);
-        System.out.println("");
-        System.out.println("Rata-Rata Nilai Akhir\t:" + rataLimit3);
-        System.out.println("Status Semester\t\t:" + statusAkhir);
-
-    }else {
-        System.out.println("Input Nilai Tidak Valid!!!");
-    }
-  
+    System.out.println("______________________________________________________________________________________");
+    System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus");
+    System.out.println("______________________________________________________________________________________");
+    System.out.println("Algoritma Pemrograman\t\t" + nilaiUts1 + "\t" + nilaiUas1 + "\t" + nilaiTugas1 + "\t" + rataLimit1 + "\t\t  " + nilaiHuruf1 + "\t\t" + status1);
+    System.out.println("Struktur Data\t\t\t" + nilaiUts2 + "\t" + nilaiUas2 + "\t" + nilaiTugas2 + "\t" + rataLimit2 + "\t\t  " + nilaiHuruf2 + "\t\t" + status2);
+    System.out.println("");
+    System.out.println("Rata-Rata Nilai Akhir\t:" + rataLimit3);
+    System.out.println("Status Semester\t\t:" + statusAkhir);  
+    
     sc.close();
     }
 }
