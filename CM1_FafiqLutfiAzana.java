@@ -22,7 +22,7 @@ public class CM1_FafiqLutfiAzana {
     double nilaiTugas1 = sc.nextDouble();
     String nilaiHuruf1;
     String status1;
-
+ 
 //INPUT NILAI MATKUL 2
     System.out.println("=== Mata Kuliah 2: Struktur Data ===");
     System.out.print("Nilai UTS\t: ");
@@ -48,8 +48,10 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf1 = "C";
     }else if (nilaiAkhir1 <= 50 && nilaiAkhir1 > 39) {
         nilaiHuruf1 = "D";
-    }else {
+    }else if (nilaiAkhir1 <= 39 && nilaiAkhir1 > 0) {
         nilaiHuruf1 = "E";
+    }else {
+        nilaiHuruf1 = "Error";
     }
     
     if (nilaiAkhir1 >= 60 && nilaiTugas1 <= 100 && nilaiTugas1 >= 0 && nilaiUas1 <= 100 && nilaiUas1 >= 0 && nilaiUts1 <= 100 && nilaiUts1 >= 0) {
@@ -74,8 +76,10 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf2 = "C";
     }else if (nilaiAkhir2 <= 50 && nilaiAkhir2 > 39) {
         nilaiHuruf2 = "D";
-    }else {
+    }else if (nilaiAkhir2 <= 39 && nilaiAkhir2 > 0) {
         nilaiHuruf2 = "E";
+    }else {
+        nilaiHuruf2 = "Error";
     }
 
     if (nilaiAkhir2 >= 60 && nilaiTugas2 <= 100 && nilaiTugas2 >= 0 && nilaiUas2 <= 100 && nilaiUas2 >=0 && nilaiUts2 <= 100 && nilaiUts2 >=0) {
