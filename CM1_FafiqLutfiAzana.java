@@ -48,7 +48,7 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf1 = "C";
     }else if (nilaiAkhir1 <= 50 && nilaiAkhir1 > 39) {
         nilaiHuruf1 = "D";
-    }else if (nilaiAkhir1 <= 39 && nilaiAkhir1 > 0) {
+    }else if (nilaiAkhir1 <= 39 && nilaiAkhir1 >= 0) {
         nilaiHuruf1 = "E";
     }else {
         nilaiHuruf1 = "Error";
@@ -76,7 +76,7 @@ public class CM1_FafiqLutfiAzana {
         nilaiHuruf2 = "C";
     }else if (nilaiAkhir2 <= 50 && nilaiAkhir2 > 39) {
         nilaiHuruf2 = "D";
-    }else if (nilaiAkhir2 <= 39 && nilaiAkhir2 > 0) {
+    }else if (nilaiAkhir2 <= 39 && nilaiAkhir2 >= 0) {
         nilaiHuruf2 = "E";
     }else {
         nilaiHuruf2 = "Error";
